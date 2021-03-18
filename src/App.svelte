@@ -140,8 +140,8 @@
             <div slot="second">
                 <TwoColumn split={80}>
                     <div slot="first">
-                        <h3>Hemoglobin</h3>
-                        Hemoglobin (also spelled <i>haemoglobin</i>) is a <SpecialTerm
+                        <h3>What is Hemoglobin?</h3>
+                        Hemoglobin (also spelled<i>haemoglobin</i>) is a <SpecialTerm
                             definition="A very large organic molecule that serves a variety of purposes in the body"
                             >protein</SpecialTerm
                         > in your red blood cells that is responsible for carrying oxygen to your organs. Oxygen is essential
@@ -153,18 +153,33 @@
                         <InlineImage url="https://upload.wikimedia.org/wikipedia/commons/3/3d/1GZX_Haemoglobin.png" />
                     </div>
                 </TwoColumn>
-                <h3>The Genetics of Sickle Cell Disease</h3>
+                <h3>DNA, Hemoglobin, and Sickle Cell Disease</h3>
                 <p>
-                    As mentioned before, SCD is caused by a defective gene in one's body. This gene, called the <SpecialTerm
-                        definition={'Short for "Hemoglobin Subunit Beta" gene'}>HBB gene</SpecialTerm
+                    DNA is a large, double-stranded organic molecule made up of long sequences of <SpecialTerm
+                        definition={'A sugar-based molecule that consists the "rungs" on the ladder-shaped model of DNA that is commonly seen in scientific literature.'}
+                        >nucleobases</SpecialTerm
+                    > that arrange themselves in units called genes. Many genes, such as the one affected by SCD correspond
+                    to sequences of molecules that make up proteins. As mentioned before, SCD is caused by a defective gene
+                    in one's body. This gene, called the <SpecialTerm
+                        definition={'Short for "Hemoglobin Subunit Beta" gene.'}>HBB gene</SpecialTerm
                     >, is responsible for producing parts of the protein that produces hemoglobin in your blood. The <SpecialTerm
+                        definition="An unintended change in one's DNA. Mutations happen in the body frequently, but most are harmless and are automatically fixed by your cells. Some mutations, such as in the case of SCD, are harmful and can be passed on from generation to generation."
                         >mutation</SpecialTerm
                     > in this gene that causes SCD deforms the hemoglobin protein, turning it into a faulty type of hemoglobin
-                    referred to as <i>hemoglobin S</i>
+                    referred to as <i>hemoglobin S</i>. These abnormally shaped hemoglobin proteins cause the red blood
+                    cell to <i>sickle</i>, or deform, causing their characteristic <SpecialTerm
+                        definition="A sickle is a farm implement similar to a scythe. Sickled red blood cells have a crescent shape resembling the blade of a sickle."
+                        >sickle-shaped</SpecialTerm
+                    > appearance.
                 </p>
             </div>
         </TwoColumn>
+
         <Bibliography websiteSources={sources} />
+        <p style="font-size: 10pt; opacity: 0.5; font-style: italic;">
+            The information and resources on this site are not intended to treat, diagnose, or serve as a replacement
+            for advice from a qualified medical professional.
+        </p>
     </div>
     <div class="footer">
         I built this website from scratch! Check out the source code <a href="https://github.com/iahuang/crispr-project"

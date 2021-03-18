@@ -4,17 +4,20 @@
     export let scale: number = 100;
 </script>
 
-<div>
-    <a href={url}><img src={url} alt={altText} style={`width:${scale}%;`}/></a>
-    <a href={url}>{url}</a>
+<div class="cont" style={`width:${scale}%;`}>
+    <a href={url}><img src={url} alt={altText} /></a>
+    <a href={url} class="link">{url}</a>
 </div>
 
 <style>
-    div {
+    .cont {
         display: inline-flex;
         flex-direction: column;
         align-items: center;
-        max-width: 100%;
+        overflow: hidden;
+    }
+    .link {
+        word-wrap:break-word;
     }
     a {
         font-size: 7pt;
@@ -30,5 +33,6 @@
         -moz-user-drag: none;
         -o-user-drag: none;
         user-drag: none;
+        width: 100%;
     }
 </style>
