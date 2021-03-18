@@ -14,6 +14,7 @@
         display: inline-flex;
         flex-direction: column;
         align-items: center;
+        max-width: 100%;
     }
     a {
         font-size: 7pt;

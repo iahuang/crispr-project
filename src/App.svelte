@@ -47,8 +47,14 @@
             organization: "U.S. Department of Health and Human Services",
             title: "Sickle Cell Disease",
             url: "https://www.nhlbi.nih.gov/health-topics/sickle-cell-disease",
-            date: "1 September 2020"
-        }
+            date: "1 September 2020",
+        },
+        {
+            organization: "Mayo Clinic",
+            title: "Hemoglobin Test",
+            url: "https://www.mayoclinic.org/tests-procedures/hemoglobin-test/about/pac-20385075",
+            date: "9 October 2019",
+        },
     ];
 </script>
 
@@ -129,11 +135,33 @@
         <h1>What Causes Sickle Cell Disease?</h1>
         <TwoColumn split={20}>
             <div slot="first">
-                
-                <InlineImage url="https://medlineplus.gov/images/PX000154_PRESENTATION.jpeg"></InlineImage>
+                <InlineImage url="https://medlineplus.gov/images/PX000154_PRESENTATION.jpeg" />
             </div>
             <div slot="second">
-                <p>As mentioned before, SCD is caused by a defective gene in one's body. This gene, called </p>
+                <TwoColumn split={80}>
+                    <div slot="first">
+                        <h3>Hemoglobin</h3>
+                        Hemoglobin (also spelled <i>haemoglobin</i>) is a <SpecialTerm
+                            definition="A very large organic molecule that serves a variety of purposes in the body"
+                            >protein</SpecialTerm
+                        > in your red blood cells that is responsible for carrying oxygen to your organs. Oxygen is essential
+                        for your cells to function, and without it, large groups of cells called tissues will die, potentially
+                        causing organ damage. Additionally, hemoglobin contains large amounts of iron, which gives blood
+                        its distinctive red color and metallic smell.
+                    </div>
+                    <div slot="second">
+                        <InlineImage url="https://upload.wikimedia.org/wikipedia/commons/3/3d/1GZX_Haemoglobin.png" />
+                    </div>
+                </TwoColumn>
+                <h3>The Genetics of Sickle Cell Disease</h3>
+                <p>
+                    As mentioned before, SCD is caused by a defective gene in one's body. This gene, called the <SpecialTerm
+                        definition={'Short for "Hemoglobin Subunit Beta" gene'}>HBB gene</SpecialTerm
+                    >, is responsible for producing parts of the protein that produces hemoglobin in your blood. The <SpecialTerm
+                        >mutation</SpecialTerm
+                    > in this gene that causes SCD deforms the hemoglobin protein, turning it into a faulty type of hemoglobin
+                    referred to as <i>hemoglobin S</i>
+                </p>
             </div>
         </TwoColumn>
         <Bibliography websiteSources={sources} />
