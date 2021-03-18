@@ -42,6 +42,13 @@
             url:
                 "https://www.stjude.org/content/dam/en_US/shared/www/patient-support/hematology-literature/bone-marrow-stem-cell-transplant-for-sickle-cell-disease.pdf",
         },
+        {
+            author: "National Heart, Lung, and Blood Institute",
+            organization: "U.S. Department of Health and Human Services",
+            title: "Sickle Cell Disease",
+            url: "https://www.nhlbi.nih.gov/health-topics/sickle-cell-disease",
+            date: "1 September 2020"
+        }
     ];
 </script>
 
@@ -88,7 +95,6 @@
             <div slot="second">
                 <InlineImage
                     url="https://www.genome.gov/sites/default/files/tg/en/illustration/sickle_cell_disease.jpg"
-                    width={400}
                 />
             </div>
         </TwoColumn>
@@ -117,8 +123,17 @@
             <div slot="second">
                 <InlineImage
                     url="https://www.ohsu.edu/sites/default/files/2019-03/stem-cell-transplant-w-captions-fullsize.jpg"
-                    width={400}
                 />
+            </div>
+        </TwoColumn>
+        <h1>What Causes Sickle Cell Disease?</h1>
+        <TwoColumn split={20}>
+            <div slot="first">
+                
+                <InlineImage url="https://medlineplus.gov/images/PX000154_PRESENTATION.jpeg"></InlineImage>
+            </div>
+            <div slot="second">
+                <p>As mentioned before, SCD is caused by a defective gene in one's body. This gene, called </p>
             </div>
         </TwoColumn>
         <Bibliography websiteSources={sources} />

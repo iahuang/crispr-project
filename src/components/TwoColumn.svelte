@@ -3,8 +3,8 @@
     export let between: number = 5;
 
     function gridTemplateCols() {
-        let a = split - between / 2;
-        let b = 100 - split + between / 2;
+        let a = split - (between / 2);
+        let b = (100 - split) - (between / 2);
         return `grid-template-columns: ${a}% ${between}% ${b}%;`;
     }
 </script>
