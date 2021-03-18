@@ -5,9 +5,17 @@
     export let websiteSources: MLASource[];
 </script>
 
-<h1>Bibliography</h1>
-<ul>
-    {#each websiteSources as source}
-        <li><BibliCitation {source} /></li>
-    {/each}
-</ul>
+<div class="bib">
+    <h1>Bibliography</h1>
+    <ul>
+        {#each websiteSources as source}
+            <li><BibliCitation {source} /></li>
+        {/each}
+    </ul>
+</div>
+
+<style>
+    li {
+        font-size: 10pt;  
+    }
+</style>

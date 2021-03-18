@@ -49,6 +49,24 @@
             url: "https://www.mayoclinic.org/tests-procedures/hemoglobin-test/about/pac-20385075",
             date: "9 October 2019",
         },
+        {
+            title: "What are genome editing and CRISPR-Cas9?",
+            organization: "Medline Plus",
+            date: "18 September 2020",
+            url: "https://medlineplus.gov/genetics/understanding/genomicresearch/genomeediting/",
+        },
+        {
+            title: "CRISPR/Cas9",
+            organization: "Tufts University",
+            author: "Peter Cananagh, Anthony Garrity",
+            url: "https://sites.tufts.edu/crispr/",
+        },
+        {
+            title: "Gene Editing Mechanism of CRISPR-Cas9",
+            author: "Wyss Institute",
+            organization: "Harvard University",
+            url: "https://wyss.harvard.edu/media-post/gene-editing-mechanism-of-crispr-cas9/",
+        },
     ];
 </script>
 
@@ -101,7 +119,6 @@
         <TwoColumn split={70}>
             <div slot="first">
                 <h3>Traditional Treatments for Sickle Cell Disease</h3>
-
                 <p>
                     The most common form of treatment for sickle cell anemia patients involves bone marrow transplant.
                     Bone marrow is responsible for producing the red blood cells in your body, and in patients with SCD,
@@ -135,7 +152,7 @@
                 <TwoColumn split={80}>
                     <div slot="first">
                         <h3>What is Hemoglobin?</h3>
-                        Hemoglobin (also spelled<i>haemoglobin</i>) is a <SpecialTerm
+                        Hemoglobin (also spelled&nbsp<i>haemoglobin</i>) is a <SpecialTerm
                             definition="A very large organic molecule that serves a variety of purposes in the body"
                             >protein</SpecialTerm
                         > in your red blood cells that is responsible for carrying oxygen to your organs. Oxygen is essential
@@ -168,7 +185,43 @@
                 </p>
             </div>
         </TwoColumn>
-
+        <div>
+            <h1>CRISPR Gene Therapy for Sickle Cell Disease</h1>
+            <h3>What is CRISPR/Cas9?</h3>
+            <p>
+                You may have heard about a fairly new gene-editing technology in the news commonly referred to as
+                <SpecialTerm
+                    definition="An acronym for Clustered Regularly Interspaced Short Palindromic Repeats. Refers to sequences of DNA that can be identified and destroyed by cells. More information below."
+                    >CRISPR</SpecialTerm
+                >. <SpecialTerm
+                    definition="Past gene-editing techniques were often imprecise or unreliable and could lead to unintended side effects in the target organism."
+                    >Ideally</SpecialTerm
+                >, gene editing allows scientists to precisely and accurately add, modify, or remove sequences of bases
+                in an organism's DNA. In doing so, scientists are given precise control over the genes that dictate the
+                creation of proteins or the expression of traits such eye color, hair color, height, resistance to
+                certain diseases, and much more. Cas9 refers to the protein that allows CRISPR to work. Cas9 itself
+                stands for <i>CRISPR-associated endonuclease 9</i>. The Cas9 protein exists naturally in bacteria as a
+                way to identify and cut viral DNA, acting as a defense mechanism against viruses. In using CRISPR/Cas9
+                for gene-editing, we use the Cas9 protein to cut the cell's own DNA rather than that of a virus or other
+                foreign body.
+            </p>
+            <p>
+                To identify the DNA Cas9 protein carries a segment of <i>guide RNA</i>, sometimes called <SpecialTerm
+                    definition={'Short for "single guide RNA"'}>sgRNA</SpecialTerm
+                >. RNA is similar to DNA in that it is a large organic molecule made up of four unique bases. RNA in
+                general acts as a complementary molecule to DNA. It can be used to store copies of genetic sequences and
+                be used to replicate or identify them, as it is used in this case. Once Cas9 identifies the target
+                sequence of DNA as a complementary match to its guide RNA, the Cas9 protein cuts the DNA, prompting the
+                cell to repair the strand.
+            </p>
+            <h3>Homology-Directed Repair</h3>
+            <p>
+                <SpecialTerm
+                    definition="Homology, in genetics, refers to a state of similarity, or having a similar structure."
+                    >Homology-Directed</SpecialTerm
+                > Repair is a mechanism whereby DNA strands that were broken by the Cas9 protein can be repaired.
+            </p>
+        </div>
         <Bibliography websiteSources={sources} />
         <p style="font-size: 10pt; opacity: 0.5; font-style: italic;">
             The information and resources on this site are not intended to treat, diagnose, or serve as a replacement
@@ -209,7 +262,8 @@
     }
 
     .main {
-        padding: 40px;
+        padding-left: 10vw;
+        padding-right: 10vw;
     }
 
     .footer {
