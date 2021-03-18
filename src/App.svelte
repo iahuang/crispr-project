@@ -7,12 +7,6 @@
 
     const sources: MLASource[] = [
         {
-            author: "Suzan Howler",
-            title: "Top 10 Anime Deaths",
-            organization: "Harvard University",
-            url: "https://urmom.com",
-        },
-        {
             author: "Medline Plus",
             organization: "U.S. National Library of Medicine",
             title: "Sickle Cell Disease",
