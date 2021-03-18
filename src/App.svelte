@@ -219,7 +219,13 @@
                 <SpecialTerm
                     definition="Homology, in genetics, refers to a state of similarity, or having a similar structure."
                     >Homology-Directed</SpecialTerm
-                > Repair is a mechanism whereby DNA strands that were broken by the Cas9 protein can be repaired.
+                > Repair is a mechanism whereby DNA strands that were broken by the Cas9 protein can be repaired. When the
+                cell detects a <SpecialTerm
+                    definition="Remember DNA is double-stranded. A break in the DNA sequence such as that induced by the Cas9 protein sever both strands of the molecule, initiating a repair."
+                    >double strand break</SpecialTerm
+                > (DSB) in one of its DNA strands, the cell looks for a nearby segment of DNA that it can use to patch the
+                break in the DNA. Specifically, it looks for strands of DNA that contain matching sequences of DNA to the
+                ends that were just cut. This is where the term "homology" in homology directed repair comes into play.
             </p>
         </div>
         <Bibliography websiteSources={sources} />

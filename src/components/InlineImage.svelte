@@ -15,9 +15,10 @@
         flex-direction: column;
         align-items: center;
         overflow: hidden;
+        word-break: break-all;
     }
     .link {
-        word-wrap:break-word;
+        word-wrap: break-word;
     }
     a {
         font-size: 7pt;
