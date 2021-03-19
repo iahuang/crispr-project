@@ -1,5 +1,6 @@
 <script lang="ts">
     import Bibliography from "./components/Bibliography.svelte";
+    import HdrDiagram from "./components/hdrepair/HDR_Diagram.svelte";
     import InlineImage from "./components/InlineImage.svelte";
     import SpecialTerm from "./components/SpecialTerm.svelte";
     import TwoColumn from "./components/TwoColumn.svelte";
@@ -66,6 +67,19 @@
             author: "Wyss Institute",
             organization: "Harvard University",
             url: "https://wyss.harvard.edu/media-post/gene-editing-mechanism-of-crispr-cas9/",
+        },
+        {
+            title: "Gene Therapy in a Patient with Sickle Cell Disease",
+            author:
+                "Jean-Antoine Ribeil, M.D., Ph.D., Salima Hacein-Bey-Abina, Pharm.D., Ph.D., Emmanuel Payen, Ph.D., et. al.",
+            date: "2 March 2017",
+            url: "https://www.nejm.org/doi/full/10.1056/NEJMoa1609677",
+        },
+        {
+            title: "Genetic Mutation",
+            author: "Suzanne Clancy, Ph.D.",
+            organization: "Nature Education",
+            url: "https://www.nature.com/scitable/topicpage/genetic-mutation-441/",
         },
     ];
 </script>
@@ -186,7 +200,7 @@
             </div>
         </TwoColumn>
         <div>
-            <h1>CRISPR Gene Therapy for Sickle Cell Disease</h1>
+            <h1>CRISPR Genome Editing</h1>
             <h3>What is CRISPR/Cas9?</h3>
             <p>
                 You may have heard about a fairly new gene-editing technology in the news commonly referred to as
@@ -219,17 +233,105 @@
                 <SpecialTerm
                     definition="Homology, in genetics, refers to a state of similarity, or having a similar structure."
                     >Homology-Directed</SpecialTerm
-                > Repair is a mechanism whereby DNA strands that were broken by the Cas9 protein can be repaired. When the
-                cell detects a <SpecialTerm
+                > Repair (HDR) is a mechanism whereby DNA strands that were broken by the Cas9 protein can be repaired. When
+                the cell detects a <SpecialTerm
                     definition="Remember DNA is double-stranded. A break in the DNA sequence such as that induced by the Cas9 protein sever both strands of the molecule, initiating a repair."
                     >double strand break</SpecialTerm
                 > (DSB) in one of its DNA strands, the cell looks for a nearby segment of DNA that it can use to patch the
                 break in the DNA. Specifically, it looks for strands of DNA that contain matching sequences of DNA to the
-                ends that were just cut. This is where the term "homology" in homology directed repair comes into play.
+                ends that were just cut. This is where the term "homology" in homology directed repair comes into play. The
+                cell then uses these sequences as templates with which to fill in the gap created by the Cas9 protein.
             </p>
+            <p>
+                This mechanism allows scientists, by means of intentionally cutting parts of the DNA and providing large
+                amounts of template/donor DNA strands along with the engineered Cas9 proteins, to insert or modify
+                specific parts of a genetic sequence. A diagram for homology-directed repair is illustrated below.
+            </p>
+            <HdrDiagram />
         </div>
+        <h1>CRISPR Applications in Treating Sickle Cell Disease</h1>
+        <p>
+            The mechanisms by which scientists are able to precisely edit DNA can be used to treat genetic disorders
+            such as sickle cell anemia. As mentioned before, with traditional methods involving bone marrow
+            transplantation, in can be difficult to find a sufficient bone marrow donor. In the United States, less than
+            20% of patients are able to find a donor to sustain this treatment (Jean-Antoine Ribeil, M.D., et. al.).
+            This is why finding an alternative method that can be generalized to more people is essential.
+        </p>
+        <h3>What About the Sickle-Cell Gene Causes Sickle Cell?</h3>
+        <p>
+            More specifically, CRISPR allows scientists to edit the HBB gene (described above). In this gene, a specific
+            sequence of bases (<SpecialTerm definition="Short for the chemical adenine">A</SpecialTerm>, <SpecialTerm
+                definition="Short for the chemical guanine">G</SpecialTerm
+            >, <SpecialTerm definition="Short for the chemical cytosine">C</SpecialTerm>, and <SpecialTerm
+                definition="Short for the chemical thymine">T</SpecialTerm
+            >) defines the structure of the hemoglobin protein. Each pair of three bases, or letters, corresponds to an
+            <SpecialTerm
+                definition="A building block of protein. Every protein is made up of a specific sequence of amino acids that defines the structure and function of that protein."
+                >amino acid</SpecialTerm
+            > that is used to construct the protein. In the case of the faulty HBB gene, a single letter near the middle
+            of the genetic sequence is <SpecialTerm
+                definition="This changes a single amino acid in the hemoglobin protein from glutamic acid to valine."
+                >changed from a A to a T</SpecialTerm
+            >. This single modification, as small is it may seem in comparison to the billions of letters that make up
+            the complete human genome, has dramatic ramifications.
+        </p>
+        <h3>CRISPR Treatment of the Sickle Cell Gene</h3>
+        <p>
+            As mentioned before, CRISPR allows scientists to precisely and accurately modify sequences of DNA. If the
+            process of Cas9 DNA-cutting and homology directed repair were used to edit the T back into an A, then the
+            proteins produced by these modified cells would not be conducive to producing sickled red blood cells.
+        </p>
+        <h3>Methodology</h3>
+        <p>
+            As CRISPR technology is still fairly new, and the safety of genenome editing in human patients is still not
+            completely understood, current scases where CRISPR is used to treat sickle cell anemia, despite showing
+            promise for being useful in the future, are rare. In one case study, <SpecialTerm
+                definition="Stem cells are unspecialized cells in the body that can turn into any other type of cell in the body. In the context of bone marrow, stem cells are the raw ingredients for red blood cells."
+                >stem cells</SpecialTerm
+            > were collected from a patient's bone marrow to be genetically modified in a lab. After the process of CRISPR
+            gene editing was applied on these cells, the modified tissue was inserted back into the patients bone marrow.
+            In a period of fifteen months after the gene treatment had occurred, no notable sickle-cell-related events such
+            as <SpecialTerm
+                definition="Anemia can cause episodic pain that can range from mild to severe. More information above."
+                >pain crises</SpecialTerm
+            > were observed, and the patient was discharged with <SpecialTerm
+                definition="Most of the side effects that did occur were related to infection, not gene editing, due to the process of drilling into the bone, an invasive and somewhat risky process."
+                >minimal side effects</SpecialTerm
+            >.
+        </p>
+        <i
+            >The full case study, as it was described here, can be found <a
+                href="https://www.nejm.org/doi/full/10.1056/NEJMoa1609677">here</a
+            > or in the references section below.</i
+        >
+        <h3>More Information</h3>
+        <p>
+            Here is a video by the <a href="https://www.genome.gov/">National Human Genome Research Institute</a> explaining
+            the details of this treatment in more detail
+        </p>
+        <iframe
+            title="Embedded Youtube Video"
+            src="https://www.youtube.com/embed/3mKj8iLcHKg"
+            frameborder="0"
+            style="width: 60vh; height: 40vh;"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+        />
+        <h3>Conclusion</h3>
+        <p>
+            Gene therapy using CRISPR/Cas9 technology can be a very effective and far more accessible method of treating
+            sickle cell disease, a condition that was previously incurable. This is not to say that there are not
+            drawbacks of using this method. As mentioned before, the side effects of gene editing are not well
+            understood, especially in humans. Although CRISPR is far more precise in gene editing than some earlier
+            methods, unintended edits to the genetic sequence can cause harmful results, including cancer.
+        </p>
+        <p>
+            Despite this, gene therapy continues to evolve, and current research shows promise that, with time, gene therapy
+            will be used as a new way to treat the millions around the world who continue to suffer from genetic
+            disorders.
+        </p>
         <Bibliography websiteSources={sources} />
-        <p style="font-size: 10pt; opacity: 0.5; font-style: italic;">
+        <p style="font-size: 12pt; opacity: 0.5; font-style: italic;">
             The information and resources on this site are not intended to treat, diagnose, or serve as a replacement
             for advice from a qualified medical professional.
         </p>
